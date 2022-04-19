@@ -13,7 +13,7 @@ Conditional Wasserstein Generative Adversarial Network with Gradient Penalty and
 •	The simplicity and effectiveness of satisfying the 1-Lipschitz constraint with spectral normalization.
 
 
-Generator structure details:
+### Generator structure details:
 
 •	Convolutional layers were used to learn useful patterns while generating data.
 
@@ -29,7 +29,7 @@ Generator structure details:
 
 •	Although not necessary, spectral normalization was used to regularize the weights and making the training process more stable.
 
-Structure details of the Critic are:
+### Critic structure details:
 
 •	Spectral normalization is used to satisfy the 1-Lipschitz restriction.
 
@@ -41,7 +41,11 @@ Structure details of the Critic are:
 
 •	The final dense layer has no activation, Wasserstein-1 distance requiring only a real value.
 
+### Evaluation
+
 The evaluation was carried out on the Building Data Genome data set [13] because it appeared recently and only a few projects used it as their main source of data. More specifically, only one paper used GAN before us to enrich it. It is a collection of 507 whole building electrical meters, most of them from American university campuses. Each of these has at least 8760 measurements because the data was collected every hour over the course of one year. Most of the data were obtained by conducting several site visits, but there are also from online sources. To obtain more features, Auto-ARIMA and RFFT / IRFFT were used before data normalization.
+
+### Loss function
 
 The generator’s loss function is complex and consists of three parts:
 
@@ -50,6 +54,8 @@ The generator’s loss function is complex and consists of three parts:
 •	First order derivatives of the first FFT feature. It uses only the main frequency, so the resulted signal is a straight line.
 
 •	Second order derivatives of the second FFT feature. It is represented by a time series generated from the first 10 dominant frequencies. It is a smooth curve that condenses the behavior of the original signal.
+
+### Visualization
 
 To perform more informative experiments, a cDCGAN model was trained to be compared to the presented cWGAN-GP-SN model. This choice was made because their architectures are very similar. The critical difference between them is the loss function.
 
