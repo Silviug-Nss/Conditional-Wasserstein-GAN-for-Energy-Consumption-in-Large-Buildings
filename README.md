@@ -12,6 +12,17 @@ Conditional Wasserstein Generative Adversarial Network with Gradient Penalty and
 
 •	The simplicity and effectiveness of satisfying the 1-Lipschitz constraint with spectral normalization.
 
+## High Level Architecture
+
+![toate](https://user-images.githubusercontent.com/57152280/164082011-50ecd72b-5fb9-4c14-8854-3dfa1940bf73.png)
+
+cWGAN-GP-SN architecture.
+
+(a) The Generator structure. From noise and labels to electrical data
+
+(b) The Critic structure. Takes fake/real electrical records and gives scores accordingly
+
+(c) The bigger picture of the cWGAN-GP-SN architecture
 
 ## Generator structure details:
 
