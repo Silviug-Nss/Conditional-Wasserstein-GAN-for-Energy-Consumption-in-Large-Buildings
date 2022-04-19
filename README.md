@@ -1,6 +1,7 @@
 # Conditional-Wasserstein-GAN-for-Energy-Consumption-in-Large-Buildings
 
 Conditional Wasserstein Generative Adversarial Network with Gradient Penalty and Spectral Normalization. This solution leverages the advantages of multiple architectures:
+
 •	The high-quality results of GANs.
 •	The auxiliary information to foster a deterministic behavior of the model from the conditional case.
 •	The increased stability of the training process with lower chances of mode collapse and vanishing gradients of the Wasserstein-1 distance.
