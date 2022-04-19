@@ -18,11 +18,11 @@ Conditional Wasserstein Generative Adversarial Network with Gradient Penalty and
 
 cWGAN-GP-SN architecture.
 
-(a) The Generator structure. From noise and labels to electrical data
+(a) The Generator structure. From noise and labels to electrical data.
 
-(b) The Critic structure. Takes fake/real electrical records and gives scores accordingly
+(b) The Critic structure. Takes fake/real electrical records and gives scores accordingly.
 
-(c) The bigger picture of the cWGAN-GP-SN architecture
+(c) The bigger picture of the cWGAN-GP-SN architecture.
 
 ## Generator structure details:
 
