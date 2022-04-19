@@ -73,3 +73,9 @@ To perform more informative experiments, a cDCGAN model was trained to be compar
 ![t-SNE](https://user-images.githubusercontent.com/57152280/164080677-7465967d-a5a3-4b94-9da2-8aa016b1b015.png)
 
 This figure shows that more than a half of the real data (red dots) are in only one (right side) cluster, emphasizing its unbalanced character. Synthetic data produced by cDCGAN can be seen only in concentrated clusters and only those ones in the center and right side have real values nearby, which can signal the presence of mode collapse. On the other hand, cWGAN-GP-SN samples are better spread and each real point has at least one generated point nearby, encouraging the idea that this model learned the data distribution without just memorizing specific samples.
+
+## Adversarial Attacks
+
+A multitude of adversarial attacks have been implemented to test the robustness of the classifiers/regressors trained on synthetic data.
+The attacks performed were: Fast Gradient Signed Method, Basic Iterative Method, Projected Gradient Descent, Carlini & Wagner, Boundary Attack, Elastic Net, Deep Fool and Newton Fool.
+
