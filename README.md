@@ -13,7 +13,7 @@ Conditional Wasserstein Generative Adversarial Network with Gradient Penalty and
 •	The simplicity and effectiveness of satisfying the 1-Lipschitz constraint with spectral normalization.
 
 
-### Generator structure details:
+## Generator structure details:
 
 •	Convolutional layers were used to learn useful patterns while generating data.
 
